@@ -1,0 +1,41 @@
+<h1>Skate Park</h1>
+
+<div class="py-4">
+  <h2>Registro</h2>
+  <hr class="w-50" />
+
+  <form action="/registrar" method="POST" enctype="multipart/form-data">
+    <div class="form-group row w-50 m-auto">
+      <div class="form-group col-12 col-sm-6">
+        <label>Email</label>
+        <input class="form-control m-auto" type="email" name="email" required/>
+      </div>
+      <div class="form-group col-12 col-sm-6">
+        <label>Nombre</label>
+        <input class="form-control m-auto" type="text" name="nombre" required/>
+      </div>
+      <div class="form-group col-12 col-sm-6">
+        <label>Password</label>
+        <input class="form-control m-auto" type="password" name="password" required/>
+      </div>
+      <div class="form-group col-12 col-sm-6">
+        <label>Repita la password</label>
+        <input class="form-control m-auto" type="password" name="repassword" required/>
+      </div>
+      <div class="form-group col-12 col-sm-6">
+        <label>Años de experiencia</label>
+        <input class="form-control m-auto" type="number" name="experiencia" required/>
+      </div>
+      <div class="form-group col-12 col-sm-6">
+        <label>Especialidad</label>
+        <input class="form-control m-auto" type="text" name="especialidad" required/>
+      </div>
+      <div class="form-group col-12 col-sm-12">
+        <label>Foto de perfil</label>
+        <input type="file" name="foto" required/>
+      </div>
+    </div>
+    <button class="btn btn-info mb-3" type="submit">Registrarme</button>
+    <p><a href="/Login"> Iniciar sesión</a></p>
+  </form>
+</div>
